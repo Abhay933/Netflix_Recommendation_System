@@ -4,7 +4,7 @@ from recommender import hybrid_recommend
 app = FastAPI()
 
 @app.get("/")
-def home():
+def root():
     return {"message": "Netflix Recommender API"}
 
 @app.get("/recommend")
